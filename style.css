@@ -17,23 +17,32 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   text-align: center;
+  position: relative;
 }
 
+/* Remove fundo escuro e centraliza */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
+}
+
+/* Texto e botão com sombra para contraste */
+.hero h1,
+.hero p,
+.hero a {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .botao {
   background-color: #ff5a5f;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 33px 110px;
+  border-radius: 15px;
   text-decoration: none;
-  margin-top: 20px;
+  font-size: 1rem;
+  margin-top: 180px;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .botao:hover {
@@ -41,7 +50,7 @@ body, html {
 }
 
 .conteudo {
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
